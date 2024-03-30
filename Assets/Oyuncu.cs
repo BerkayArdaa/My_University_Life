@@ -18,6 +18,7 @@ public class Oyuncu : MonoBehaviour
     float kursunHizi = 500.0f;
     public Yonet yonet;
     
+    
 
     // Start is called before the first frame update
  
@@ -66,7 +67,7 @@ public class Oyuncu : MonoBehaviour
         Destroy(gameObject);
         GameObject newBoom=Instantiate(boomEffect, transform.position, Quaternion.identity);
         Destroy(newBoom, 1.0f);
-        yonet.paneli_goster();
+        yonet.paneli_goster_second();
 
     }
 }

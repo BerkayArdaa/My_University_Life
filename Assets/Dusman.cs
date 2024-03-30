@@ -10,6 +10,7 @@ public class Dusman : MonoBehaviour
     public GameObject boomEffect;
     public GameObject EnemyGun;
 
+
     public Image dusman_bari;
 
     float can = 100.0f;
@@ -20,7 +21,7 @@ public class Dusman : MonoBehaviour
     public Transform Oyuncu;
     float ates_etme_araligi = 0.2f;
     float ates_etme_zamani = 0.0f;
-     static int score = 0;
+    static int score = 0;
 
 
     void Update()
@@ -95,7 +96,7 @@ public class Dusman : MonoBehaviour
         {
             yonet.paneli_goster();
         }
-        if (SceneManager.GetActiveScene().name.Equals("Section6") && score >= 2)
+        if (SceneManager.GetActiveScene().name.Equals("Section6") && score >= 3)
         {
             yonet.paneli_goster();
         }

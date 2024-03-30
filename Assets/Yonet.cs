@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Yonet : MonoBehaviour
 {
     public GameObject bitti_png;
+    public GameObject tekrar_png;
     public GameObject Oyuncu;
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,11 @@ public class Yonet : MonoBehaviour
 
      
     }
+    public void paneli_goster_second()
+    {
+        tekrar_png.SetActive(true);
+        Invoke("durdur", 1.0f);
+    }
     void durdur()
     {
 
@@ -34,8 +40,7 @@ public class Yonet : MonoBehaviour
     public void tekrar_Oyna()
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene("Section5");
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void ilerle()
     {
